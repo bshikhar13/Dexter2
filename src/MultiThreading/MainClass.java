@@ -13,7 +13,22 @@ public class MainClass {
 		
 		t2.start();
 		t3.start();
-
+		
+		TestJoinMethod tjm1=new TestJoinMethod();  
+		TestJoinMethod tjm2=new TestJoinMethod();  
+		TestJoinMethod tjm3=new TestJoinMethod();  
+		
+		tjm1.start();  
+		 
+		try{  
+		  tjm1.join();  
+		 }catch(Exception e){
+			 System.out.println(e);
+		}  
+		
+		  
+		 tjm2.start();  
+		 tjm3.start();  
 	}
 
 }
