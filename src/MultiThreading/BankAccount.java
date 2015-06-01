@@ -23,12 +23,14 @@ public class BankAccount {
     	double newAccountBalance;
 
 	if(amount < 0.0){
-          return false; // can not deposit a negative amount
+        return false; // can not deposit a negative amount
+	
 	}else{
-          newAccountBalance = accountBalance + amount;
-          accountBalance = newAccountBalance;
-	  return true;
-         }
+    
+		newAccountBalance = accountBalance + amount;
+        accountBalance = newAccountBalance;
+        return true;
+    }
 
     }
 
